@@ -1,5 +1,14 @@
 #include<stdio.h>
-int main(){
+void average();
+void grade();
+int main()
+{
+    void average();
+    void grade();
+    return 0;
+}
+void average()
+{
     int mark[3][3]={{50,60,70},{80,90,100},{30,40,50}};
     char name[3][10]={"Ali","Bob","Cat"};
     int i,j,sum;
@@ -23,7 +32,11 @@ int main(){
             printf("%s Fail avg=%.2f\n",name[i],avg);
         }
     }
-    int max=0,pos=0;
+}
+void grade(){
+    int mark[3][3]={{50,60,70},{80,90,100},{30,40,50}};
+    char name[3][10]={"Ali","Bob","Cat"};
+    int i, j, max=0,pos=0, sum=0;;
     for(i=0;i<3;i++){
         sum=0;
         for(j=0;j<3;j++){
@@ -35,5 +48,4 @@ int main(){
         }
     }
     printf("Topper: %s with total %d\n",name[pos],max);
-    return 0;
 }
